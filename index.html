@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga - Anytime, Any Place, Any Workout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Javier start -->
+    
+
+
+    <!-- Javier end -->
+
+    <!-- start -->
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <img src="images/moon.png" alt="Moon Icon" class="moon">
+        <img src="images/sun.png" alt="Sun Icon" class="sun">
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Anytime, Any<br>Place, Any<br>Workout</h1>
+                <p>Take your routine at any time of your day, with the new videos and with the teachers who will guide you.</p>
+                <button class="cta-button">Get Started Free <span>→</span></button>
+            </div>
+            <div class="hero-images">
+                <div class="image-top">
+                    <img src="images/imagentres.jpg" alt="Yoga pose">
+                    <div class="badge-top">
+                        <img src="images/play.png" alt="Play Icon">
+                        <span>High Quality Video</span>
+                    </div>
+                </div>
+                <div class="image-bottom">
+                    <img src="images/imagendos.png" alt="Professional trainer">
+                    <div class="badge-bottom">
+                        <img src="images/run.png" alt="Runner Icon">
+                        <span>Professional Trainer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram">
+        <div class="instagram-container">
+            <div class="instagram-wrapper">
+                <div class="instagram-center">
+                    <h2>Follow Us On Instagram</h2>
+                    <p class="hashtag">#YOGA</p>
+                    <button class="instagram-button">Follow <span>→</span></button>
+                </div>
+                
+                <div class="instagram-photos">
+                    <div class="instagram-item photo-top-left">
+                        <img src="images/imagencinco.jpg" alt="Yoga 1">
+                    </div>
+                    <div class="instagram-item photo-top-right">
+                        <img src="images/imagenseis.jpg" alt="Yoga 2">
+                    </div>
+                    <div class="instagram-item photo-bottom-left">
+                        <img src="images/image-7.jpg" alt="Yoga 3">
+                    </div>
+                    <div class="instagram-item photo-bottom-right">
+                        <img src="images/imagenocho.jpg" alt="Yoga 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-card">
+                <h3>Join our newsletter</h3>
+                <p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just enter your email.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="For latest update send mail">
+                    <button>Subscribe -> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 class="yoga-title">Yoga</h4>
+                    <p>Take care of your health and your mind with the best Yoga classes.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <p>12345 M/01 Sol Avenue, Lima, Peru</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>+123 456 7890 <br>yoga@email.com</p>
+                </div>
+                <div class="footer-col footer-col-office">
+                    <h4>Office</h4>
+                    <p>Monday - Saturday<br>9AM - 10PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <img src="images/iconfacebook.png" alt="Facebook">
+                    <img src="images/iconinstagram.png" alt="Instagram">
+                    <img src="images/icontwitter.png" alt="Twitter">
+                    <img src="images/iconyoutube.png" alt="YouTube logo social media icon, red play button inside rounded rectangle, shown with other footer social links inviting users to visit the channel">
+                </div>
+                <p class="copyright">© Copyright Bedimcode. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+
+        // Load saved theme
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>

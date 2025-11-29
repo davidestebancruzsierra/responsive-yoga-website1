@@ -1,1 +1,3 @@
-# responsive-yoga-website1
+# responsive-yoga-website
+
+Design created by Young Kim
